@@ -78,7 +78,8 @@
     }
 
     h3 {
-      font-size: 1.414rem;
+      font-size: 1.214rem;
+      line-height: 3rem;
     }
 
     h4 {
@@ -122,8 +123,7 @@
     }
 
     body {
-      height: 200vh;
-      margin: 0 1rem 1rem 1rem;
+      margin: 0 1rem 10rem 1rem;
     }
 
     .title {
@@ -133,6 +133,7 @@
       left: 0;
       font-size: 2rem;
       margin: 2rem 0;
+      z-index: 20;
     }
 
     h2 {
@@ -141,6 +142,7 @@
       top: 3rem;
       left: 0;
       font-size: 1.5rem;
+      z-index: 10;
     }
 
     a {
@@ -148,7 +150,6 @@
       color: #3b8bba;
     }
 
-    ,
     a:hover {
       text-decoration: underline;
     }
@@ -158,7 +159,7 @@
     }
 
     .intro {
-      max-width: 20rem;
+      /* max-width: 20rem; */
       /* position: sticky;
             top: 5rem;
             left: 0; */
@@ -169,15 +170,53 @@
       height: 10rem;
       background: grey;
     }
-
+    /* .links {
+      margin-top: .5rem;
+      display: inline-block;
+    } */
     .link-icon {
       white-space: nowrap;
     }
-
+    .separate {
+      margin-right: .5rem;
+    }
     .smiley {
       font-size: 1.5rem;
       vertical-align: text-top;
     }
+    .projects {
+      position: relative;
+      width: 100%;
+    }
+    .project {
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .image1 {
+      width: 112%;
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+    .video-wrapper {
+      position: relative;
+      margin-top: -3rem;
+      padding-bottom: 2rem;
+    }
+    .video1 {
+      position: relative;
+      top: 2rem;
+      left: -0.5rem;
+      width: 56%;
+      box-shadow: 0 0 3rem 0 rgba(0,0,0,0.25);
+    }
+    .video2 {
+      position: absolute;
+      top: 0;
+      right: -.5rem;
+      width: 56%;
+      box-shadow: 0 0 3rem 0 rgba(0,0,0,0.25);
+    }
+
   </style>
 </head>
 
@@ -203,17 +242,50 @@
         Instagram</a> <span class="smiley">😊</span></p>
   </div>
   <div>
-    <h2>Projects</h2>
+    <h2>Work</h2>
     <div class="projects">
 
-      <a href="https://www.rabble.se">Rabble</a><br />
-      <a href="https://rabattkod.gp.se">GP rabattkoder</a>
+      <div class="project">
+        <h3>Rabble</h3>
+        <span class="links">
+          <a href="https://www.rabble.se" class="link-icon separate"><i class="fas fa-link" style="font-size: .9em;"></i> Website</a>
+          <a href="https://itunes.apple.com/se/app/rabble/id379895690?mt=8" class="link-icon separate"><i class="fab fa-apple"></i> iOS</a>
+          <a href="https://play.google.com/store/apps/details?id=se.rabble.android&hl=sv" class="link-icon separate"><i class="fab fa-android"></i> Android</a>
+        </span>
+        <p>A responsive and multi-platform discount experience available in Sweden, Norway, Denmark and Poland.</p>
+        <img src="https://res.cloudinary.com/oscarni/image/upload/f_auto/v1543870855/rabble.png" class="image1" alt="Rabble website">
+        <div class="video-wrapper">
+          <video width="250" loop autoplay muted class="video1">
+            <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_search.webm" type="video/webm"/>
+            <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_search.mp4" type="video/mp4"/>
+            <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_search.ogg" type="video/ogg"/>
+          </video>
+          <video width="250" loop autoplay muted class="video2">
+            <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_map.webm" type="video/webm"/>
+            <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_map.mp4" type="video/mp4"/>
+            <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_map.ogg" type="video/ogg"/>
+          </video>
+        </div>
+        <p>I worked on most features and lead the development and design of features like accounts, search, recommendation engine, location based iBeacon notifications, several redesigns and A/B testing of the platform and a more user centered contextual mobile app experience. I also worked on all underlying internal tools.</p>
+      </div>
+
+      <div class="project">
+        <h3>GP Rabattkoder</h3>
+        <span class="links">
+          <a href="https://rabattkod.gp.se" class="link-icon"><i class="fas fa-link" style="font-size: .9em;"></i> Website</a>
+        </span>
+        <p>A responsive discount website for Göteborgs-Posten. Designed mobile first and SEO in mind.</p>
+        <img src="https://res.cloudinary.com/oscarni/image/upload/f_auto/v1543873823/gp_rabattkoder.png" class="image1" alt="GP Rabattkoder website desktop">
+        <div class="video-wrapper">
+          <img src="https://res.cloudinary.com/oscarni/image/upload/f_auto/v1543873815/gp_rabattkoder_brand_mobile.png" class="video1" alt="GP Rabattkoder store page on a mobile screen">
+          <img src="https://res.cloudinary.com/oscarni/image/upload/f_auto/v1543873816/gp_rabattkoder_mobile.png" class="video2" alt="GP Rabattkoder front page on a mobile screen">
+        </div>
+        <p></p>
+      </div>
       
     </div>
 
-
   </div>
-
 
 </body>
 
