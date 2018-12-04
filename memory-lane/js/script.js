@@ -37,7 +37,7 @@ $(document).ready(function() {
 	      if (in_viewport.hasClass('top')) {
 	          new_url = base_url; // The original URL of the stream page
 	      } else {
-	          new_url = base_url + in_viewport.data('section');
+	          new_url = base_url + '#' + in_viewport.data('section');
 	      }
 	  History.replaceState('', in_viewport.data('section'), new_url);
 	  }
