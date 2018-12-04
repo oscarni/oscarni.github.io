@@ -1,0 +1,198 @@
+/* reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+* {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end reset */
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('fonts/league_gothic-webfont.eot');
+    src: url('fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/league_gothic-webfont.woff') format('woff'),
+         url('fonts/league_gothic-webfont.ttf') format('truetype'),
+         url('fonts/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+font-family: georgia;
+background:#f5f5f5;
+color:#333;
+padding-bottom:400px;
+}
+
+#nav {
+position:fixed;
+top:105px;
+left:1%;
+overflow:hidden;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+text-transform:uppercase;
+font-family:"Helvetica Neue";
+font-weight:200;
+width:18%;
+max-width:190px;
+word-wrap: break-word;
+}
+
+#nav ul li {
+line-height:1.2;
+}
+
+#nav ul li ul li {
+font-size:0.8em;
+text-transform:none;
+	
+}
+
+#nav .websection {
+background:#f5f5f5;
+padding:10px;
+}
+
+#nav .interactionsection {
+background:#f0f0f0;
+padding:10px;
+}
+
+#nav ul li ul li {
+text-decoration:none;
+color:#777;	
+}
+
+#nav ul li ul li:hover {
+text-decoration:underline;
+cursor:pointer;	
+}
+#nav .current {
+font-weight:bold;
+color:#000;
+}
+
+.sectionwrap {
+width:60%;
+overflow:hidden;
+background:#ccc;
+padding:20px 20% 40px 20%;
+border-bottom:2px dashed #ccc;
+}
+
+.section {
+max-width:800px;
+margin:0 auto;
+}
+
+.webdesign {
+background:#f5f5f5;	
+}
+.interactiondesign {
+background:#f0f0f0;	
+}
+
+.whitefade {
+background: #f5f5f5; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 44%, #f5f5f5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(44%,#ffffff), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 44%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 44%,#f5f5f5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 44%,#f5f5f5 100%); /* IE10+ */
+background: linear-gradient(top,  #ffffff 44%,#f5f5f5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+	
+}
+
+.center {
+text-align:center;
+padding:100px 0 50px 0;
+}
+.firstmeta {
+font-size:1.4em;
+}
+.section h1 {
+font-family: LeagueGothicRegular;
+text-transform:uppercase;
+color:#333;
+font-size:160px;
+text-shadow: 0px 0px 20px #ccc;
+filter: dropshadow(color=#000000, offx=0, offy=0);
+}
+
+.section h2 a{
+font-family: LeagueGothicRegular;
+text-transform:uppercase;
+color:#333;
+font-size:100px;
+text-decoration:none;
+pointer-events:none;
+}
+
+.section h2 a:hover{
+color:#888;
+}
+.section .meta {
+display:block;
+color:#aaa;
+margin-bottom:20px;
+}
+
+.interactiondesign .section .meta {
+color:#bbb;
+}
+.webscreen {
+max-width:70%;
+float:left;
+cloar:right;
+margin-left:-13px;	
+}
+
+.section .info {
+float:right;
+width:26%;
+background:rgba(0,0,0,0.03);
+margin-top:5px;
+padding:10px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border:1px dashed #fff;
+}
+
+.section .info p{
+line-height:1.2;
+word-wrap: break-word;
+}
