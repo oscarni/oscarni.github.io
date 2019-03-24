@@ -1,321 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-13283794-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-13283794-1');
-  </script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Oscar Nilsson - Portfolio</title>
-  <meta name="description" content="I design useful experiences for users focusing on the entire journey">
-  
-  <meta property="og:title" content="Oscar Nilsson - Portfolio"/>
-  <meta property="og:image" content="https://res.cloudinary.com/oscarni/image/upload/v1543965033/screenshot.png"/>
-  <meta property="og:description" content="I design useful experiences for users focusing on the entire journey"/>
-  <meta property="og:url" content="//oscarn.se" />
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700" rel="stylesheet">
-  <style>
-    /*! Typebase.less v0.1.0 | MIT License */
-    /* Setup */
-    html {
-      /* Change default typefaces here */
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-size: 127.5%;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-
-    /* Copy & Lists */
-    p {
-      line-height: 1.5rem;
-      margin-top: 1.5rem;
-      margin-bottom: 0;
-    }
-
-    ul,
-    ol {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    ul li,
-    ol li {
-      line-height: 1.5rem;
-    }
-
-    ul ul,
-    ol ul,
-    ul ol,
-    ol ol {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    blockquote {
-      line-height: 1.5rem;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    /* Headings */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      /* Change heading typefaces here */
-      font-family: 'IBM Plex Sans', sans-serif;
-      margin-top: 1.5rem;
-      margin-bottom: 0;
-      line-height: 1.5rem;
-    }
-
-    h1 {
-      font-size: 4.242rem;
-      line-height: 4.5rem;
-      margin-top: 3rem;
-    }
-
-    h2 {
-      font-size: 2.828rem;
-      line-height: 3rem;
-      margin-top: 3rem;
-    }
-
-    h3 {
-      font-size: 1.214rem;
-      line-height: 3rem;
-    }
-
-    h4 {
-      font-size: 0.707rem;
-    }
-
-    h5 {
-      font-size: 0.4713333333333333rem;
-    }
-
-    h6 {
-      font-size: 0.3535rem;
-    }
-
-    /* Tables */
-    table {
-      margin-top: 1.5rem;
-      border-spacing: 0px;
-      border-collapse: collapse;
-    }
-
-    table td,
-    table th {
-      padding: 0;
-      line-height: 33px;
-    }
-
-    /* Code blocks */
-    code {
-      vertical-align: bottom;
-    }
-
-    /* Leading paragraph text */
-    .lead {
-      font-size: 1.414rem;
-    }
-
-    /* Hug the block above you */
-    .hug {
-      margin-top: 0;
-    }
-
-    body {
-      margin: 0;
-      padding: 0 1rem 6rem 1rem;
-      overflow-x: hidden;
-    }
-
-    .content {
-      max-width: 30rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .title {
-      z-index: 20;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      z-index: 10;
-    }
-
-    a {
-      text-decoration: none;
-      color: #3b8bba;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    a:visited {
-      color: #6f2353;
-    }
-
-    .link-icon {
-      white-space: nowrap;
-    }
-    .separate {
-      margin-right: .5rem;
-    }
-    .smiley {
-      font-size: 1.5rem;
-      vertical-align: text-top;
-    }
-    .projects {
-      position: relative;
-      width: 100%;
-    }
-    .project {
-      margin-bottom: 2rem;
-      position: relative;
-    }
-    .image1 {
-      width: 110%;
-      margin-left: -5%;
-    }
-    .video-wrapper {
-      position: relative;
-      margin-top: -3rem;
-      padding-bottom: 2rem;
-    }
-    .video1 {
-      position: relative;
-      top: 2rem;
-      left: -0.5rem;
-      width: 56%;
-      box-shadow: 0 0 3rem 0 rgba(0,0,0,0.25);
-    }
-    .video2 {
-      position: absolute;
-      top: 0;
-      right: -.5rem;
-      width: 56%;
-      box-shadow: 0 0 3rem 0 rgba(0,0,0,0.25);
-    }
-    hr {
-      border: 0;
-      height: 1px;
-      background: #333;
-      background-image: linear-gradient(to right, #ccc, #333, #ccc);
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-    }
-    .bye {
-      text-align: center;
-      font-size: 3rem;
-      padding-top: 2rem;
-    }
-
-    @media only screen and (min-width: 800px) {
-      body {
-        margin-left: 2rem;
-        margin-right: 2rem;
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-13283794-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    }
-  </style>
-</head>
+      gtag("js", new Date());
 
-<body>
-  <h1 class="title content">Oscar Nilsson</h1>
+      gtag("config", "UA-13283794-1");
+    </script>
 
-  <div class="content">
-    <div class="intro-wrapper">
-      <section class="intro">
-        <p>I design useful experiences for users focusing on the entire journey.</p>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Oscar Nilsson - Portfolio</title>
+    <meta
+      name="description"
+      content="I design useful experiences for users focusing on the entire journey"
+    />
 
-        <p>I am currently the CTO at Rabble. Besides managing the team of developers I've been the main
-          designer for all our user facing technologies and internal tools. Lately I also freelance as a UX
-          designer for UNICEF Sweden (Under NDA at the moment).</p>
+    <meta property="og:title" content="Oscar Nilsson - Portfolio" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/oscarni/image/upload/v1543965033/screenshot.png"
+    />
+    <meta
+      property="og:description"
+      content="I design useful experiences for users focusing on the entire journey"
+    />
+    <meta property="og:url" content="//oscarn.se" />
 
-        <p>Besides sketching and designing interfaces I also enjoy coding and I'm also a contributor to the open source
-          JavaScript community. Here is my <a href="https://github.com/oscarni" class="link-icon"><i
-              class="fab fa-github"></i> GitHub</a>.</p>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700"
+      rel="stylesheet"
+    />
+    <style>
+      /*! Typebase.less v0.1.0 | MIT License */
+      /* Setup */
+      html {
+        /* Change default typefaces here */
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 127.5%;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
 
-        <p>I did my masters in HCI at KTH in Stockholm, Sweden. One of the more noteworthy projects I worked on was an
-          interactive table for hostels. It encouraged travelers to get together and discover the city. It won 1st place
-          in a local competition and we got to present it at Aalto University in Helsinki.</p>
+      /* Copy & Lists */
+      p {
+        line-height: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+      }
 
-        <p>Feel free to check out my <a href="https://www.linkedin.com/in/oscarnilsson/" class="link-icon"><i class="fab fa-linkedin"></i>
-            LinkedIn</a>, <a href="https://www.instagram.com/oscarni/" class="link-icon"><i class="fab fa-instagram"></i>
-            Instagram</a> and <a href="https://www.pinterest.se/oscarni/" class="link-icon"><i class="fab fa-pinterest"></i>
-              Pinterest</a> <span class="smiley">😊</span></p>
-      </section>
-    </div>
-    <div class="projects-wrapper">
-      <div class="projects">
-        <h2 class="top-header">Work</h2>
+      ul,
+      ol {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
 
-        <section class="project">
-          <h3>Rabble</h3>
-          <span class="links">
-            <a href="https://www.rabble.se" class="link-icon separate"><i class="fas fa-link" style="font-size: .9em;"></i> Website</a>
-            <a href="https://itunes.apple.com/se/app/rabble/id379895690?mt=8" class="link-icon separate"><i class="fab fa-apple"></i> iPhone app</a>
-            <a href="https://play.google.com/store/apps/details?id=se.rabble.android&hl=sv" class="link-icon separate"><i class="fab fa-android"></i> Android app</a>
-          </span>
-          <p>A responsive and multi-platform discount experience available in Sweden, Norway, Denmark and Poland.</p>
-          <img src="https://res.cloudinary.com/oscarni/image/upload/w_1200,f_auto/v1543870855/rabble.png" class="image1" alt="Rabble website">
-          <div class="video-wrapper">
-            <video width="250" loop autoplay muted playsinline class="video1" poster="https://res.cloudinary.com/oscarni/video/upload/so_10p/v1543868726/rabble_search.jpg">
-              <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_search.webm" type="video/webm"/>
-              <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_search.mp4" type="video/mp4"/>
-              <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_search.ogg" type="video/ogg"/>
-              <img src="https://res.cloudinary.com/oscarni/video/upload/so_10p/v1543868726/rabble_search.jpg" alt="Rabble ios app screenshot of search">
-            </video>
-            <video width="250" loop autoplay muted playsinline class="video2" poster="https://res.cloudinary.com/oscarni/video/upload/so_30p/v1543868726/rabble_map.jpg">
-              <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_map.webm" type="video/webm"/>
-              <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_map.mp4" type="video/mp4"/>
-              <source src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_map.ogg" type="video/ogg"/>
-              <img src="https://res.cloudinary.com/oscarni/video/upload/so_30p/v1543868726/rabble_map.jpg" alt="Rabble ios app screenshot of the map">
-            </video>
-          </div>
-          <p>As development and design lead I worked on all aspects of the platform including features like user accounts, search, recommendation engine, location based iBeacon notifications, several redesigns, A/B testing and a more user centered contextual mobile app experience. I also worked on all underlying internal tools, code and design together with my team.</p>
+      ul li,
+      ol li {
+        line-height: 1.5rem;
+      }
+
+      ul ul,
+      ol ul,
+      ul ol,
+      ol ol {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      blockquote {
+        line-height: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      /* Headings */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        /* Change heading typefaces here */
+        font-family: "IBM Plex Sans", sans-serif;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        line-height: 1.5rem;
+      }
+
+      h1 {
+        font-size: 4.242rem;
+        line-height: 4.5rem;
+        margin-top: 3rem;
+      }
+
+      h2 {
+        font-size: 2.828rem;
+        line-height: 3rem;
+        margin-top: 3rem;
+      }
+
+      h3 {
+        font-size: 1.214rem;
+        line-height: 3rem;
+      }
+
+      h4 {
+        font-size: 0.707rem;
+      }
+
+      h5 {
+        font-size: 0.4713333333333333rem;
+      }
+
+      h6 {
+        font-size: 0.3535rem;
+      }
+
+      /* Tables */
+      table {
+        margin-top: 1.5rem;
+        border-spacing: 0px;
+        border-collapse: collapse;
+      }
+
+      table td,
+      table th {
+        padding: 0;
+        line-height: 33px;
+      }
+
+      /* Code blocks */
+      code {
+        vertical-align: bottom;
+      }
+
+      /* Leading paragraph text */
+      .lead {
+        font-size: 1.414rem;
+      }
+
+      /* Hug the block above you */
+      .hug {
+        margin-top: 0;
+      }
+
+      body {
+        margin: 0;
+        padding: 0 1rem 6rem 1rem;
+        overflow-x: hidden;
+      }
+
+      .content {
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .title {
+        z-index: 20;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        z-index: 10;
+      }
+
+      a {
+        text-decoration: none;
+        color: #3b8bba;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:visited {
+        color: #6f2353;
+      }
+
+      .link-icon {
+        white-space: nowrap;
+      }
+      .separate {
+        margin-right: 0.5rem;
+      }
+      .smiley {
+        font-size: 1.5rem;
+        vertical-align: text-top;
+      }
+      .projects {
+        position: relative;
+        width: 100%;
+      }
+      .project {
+        margin-bottom: 2rem;
+        position: relative;
+      }
+      .image1 {
+        width: 110%;
+        margin-left: -5%;
+      }
+      .video-wrapper {
+        position: relative;
+        margin-top: -3rem;
+        padding-bottom: 2rem;
+      }
+      .video1 {
+        position: relative;
+        top: 2rem;
+        left: -0.5rem;
+        width: 56%;
+        box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.25);
+      }
+      .video2 {
+        position: absolute;
+        top: 0;
+        right: -0.5rem;
+        width: 56%;
+        box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.25);
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+      .bye {
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 2rem;
+      }
+
+      .inline-image {
+        display: inline-block;
+        width: 400px;
+        margin: 1em;
+      }
+
+      .full-width-horizontal-scroll {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        margin-bottom: -5rem;
+      }
+
+      .full-width-horizontal-scroll *:first-child {
+        margin-left: 100vw;
+        animation: slide-small 0.8s forwards cubic-bezier(0.24, 1.28, 0.39, 0.99);
+      }
+
+      details {
+        padding-bottom: 0rem;
+        transition: padding-bottom 600ms cubic-bezier(0, 1.02, 0.38, 0.97);
+        transition-property: padding-bottom;
+      }
+
+      details[open] {
+        padding-bottom: 5rem;
+      }
+
+      details summary {
+        cursor: pointer;
+      }
+
+      details summary:hover span {
+        text-decoration: underline;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details[open] summary .arrow {
+        transform: rotate(-180deg);
+      }
+
+      details summary:focus {
+        outline: none;
+      }
+
+      details summary .arrow {
+        transition: transform 0.3s;
+        margin-left: 0.5rem;
+      }
+
+      @media only screen and (min-width: 612px) {
+        .full-width-horizontal-scroll {
+          --auto-margin: calc((100vw - 30rem) / 2 * -1);
+          margin-right: var(--auto-margin);
+          margin-left: var(--auto-margin);
+        }
+        .full-width-horizontal-scroll *:first-child {
+          animation: slide-big 0.8s forwards cubic-bezier(0.24, 1.28, 0.39, 0.99);
+        }
+      }
+
+      @keyframes slide-big {
+        100% {
+          margin-left: calc((100vw - 30rem) / 2);
+        }
+      }
+
+      @keyframes slide-small {
+        100% {
+          margin-left: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="title content">Oscar Nilsson</h1>
+
+    <div class="content">
+      <div class="intro-wrapper">
+        <section class="intro">
+          <p>
+            I design useful experiences for users focusing on the entire
+            journey.
+          </p>
+
+          <p>
+            I am currently the CTO at Rabble. Besides managing the team of
+            developers I've been the main designer for all our user facing
+            technologies and internal tools. Lately I also freelance as a UX
+            designer for UNICEF Sweden (Under NDA at the moment).
+          </p>
+
+          <p>
+            Besides sketching and designing interfaces I also enjoy coding and
+            I'm also a contributor to the open source JavaScript community. Here
+            is my
+            <a href="https://github.com/oscarni" class="link-icon"
+              ><i class="fab fa-github"></i> GitHub</a
+            >.
+          </p>
+
+          <p>
+            I did my masters in HCI at KTH in Stockholm, Sweden. One of the more
+            noteworthy projects I worked on was an interactive table for
+            hostels. It encouraged travelers to get together and discover the
+            city. It won 1st place in a local competition and we got to present
+            it at Aalto University in Helsinki.
+          </p>
+
+          <p>
+            Feel free to check out my
+            <a
+              href="https://www.linkedin.com/in/oscarnilsson/"
+              class="link-icon"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >,
+            <a href="https://www.instagram.com/oscarni/" class="link-icon"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+            and
+            <a href="https://www.pinterest.se/oscarni/" class="link-icon"
+              ><i class="fab fa-pinterest"></i> Pinterest</a
+            >
+            <span class="smiley">😊</span>
+          </p>
         </section>
-
-        <section class="project">
-          <h3>GP Rabattkoder</h3>
-          <span>
-            <a href="https://rabattkod.gp.se" class="link-icon"><i class="fas fa-link" style="font-size: .9em;"></i> Website</a>
-          </span>
-          <p>A responsive discount website for Göteborgs-Posten. Designed mobile first with SEO in mind.</p>
-          <img src="https://res.cloudinary.com/oscarni/image/upload/w_1200,f_auto/v1543873823/gp_rabattkoder.png" class="image1" alt="GP Rabattkoder website desktop">
-          <div class="video-wrapper">
-            <img src="https://res.cloudinary.com/oscarni/image/upload/f_auto/v1543873815/gp_rabattkoder_brand_mobile.png" class="video1" alt="GP Rabattkoder store page on a mobile screen">
-            <img src="https://res.cloudinary.com/oscarni/image/upload/f_auto/v1543873816/gp_rabattkoder_mobile.png" class="video2" alt="GP Rabattkoder front page on a mobile screen">
-          </div>
-          <p></p>
-        </section>
-        
       </div>
+      <div class="projects-wrapper">
+        <div class="projects">
+          <h2 class="top-header">Work</h2>
 
-      <hr>
-      <p>I kept my <a href="/memory-lane">previous website</a> of some of my earlier work – websites and some interaction design projects.</p>
-      <p class="bye">👋</p>
+          <section class="project">
+            <h3>Rabble</h3>
+            <span class="links">
+              <a href="https://www.rabble.se" class="link-icon separate"
+                ><i class="fas fa-link" style="font-size: .9em;"></i> Website</a
+              >
+              <a
+                href="https://itunes.apple.com/se/app/rabble/id379895690?mt=8"
+                class="link-icon separate"
+                ><i class="fab fa-apple"></i> iPhone app</a
+              >
+              <a
+                href="https://play.google.com/store/apps/details?id=se.rabble.android&hl=sv"
+                class="link-icon separate"
+                ><i class="fab fa-android"></i> Android app</a
+              >
+            </span>
+            <p>
+              A responsive and multi-platform discount experience available in
+              Sweden, Norway, Denmark and Poland.
+            </p>
+            <img
+              src="https://res.cloudinary.com/oscarni/image/upload/w_1200,f_auto/v1543870855/rabble.png"
+              class="image1"
+              alt="Rabble website"
+            />
+            <div class="video-wrapper">
+              <video
+                width="250"
+                loop
+                autoplay
+                muted
+                playsinline
+                class="video1"
+                poster="https://res.cloudinary.com/oscarni/video/upload/so_10p/v1543868726/rabble_search.jpg"
+              >
+                <source
+                  src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_search.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_search.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_search.ogg"
+                  type="video/ogg"
+                />
+                <img
+                  src="https://res.cloudinary.com/oscarni/video/upload/so_10p/v1543868726/rabble_search.jpg"
+                  alt="Rabble ios app screenshot of search"
+                />
+              </video>
+              <video
+                width="250"
+                loop
+                autoplay
+                muted
+                playsinline
+                class="video2"
+                poster="https://res.cloudinary.com/oscarni/video/upload/so_30p/v1543868726/rabble_map.jpg"
+              >
+                <source
+                  src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_map.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_map.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="https://res.cloudinary.com/oscarni/video/upload/v1543868726/rabble_map.ogg"
+                  type="video/ogg"
+                />
+                <img
+                  src="https://res.cloudinary.com/oscarni/video/upload/so_30p/v1543868726/rabble_map.jpg"
+                  alt="Rabble ios app screenshot of the map"
+                />
+              </video>
+            </div>
+            <p>
+              As development and design lead I worked on all aspects of the
+              platform including features like user accounts, search,
+              recommendation engine, location based iBeacon notifications,
+              several redesigns, A/B testing and a more user centered contextual
+              mobile app experience. I also worked on all underlying internal
+              tools, code and design together with my team.
+            </p>
+            <br />
+            <!-- <details>
+              <summary>
+                <span>The good parts</span>
+                <i class="fas fa-chevron-down arrow"></i>
+              </summary>
+              <div class="full-width-horizontal-scroll">
+                <img
+                  src="https://res.cloudinary.com/oscarni/image/upload/v1553467231/rabblewp7luanch.png"
+                  class="inline-image"
+                  alt="Rabble windows phone ad"
+                />
+              </div>
+            </details> -->
+          </section>
+
+          <section class="project">
+            <h3>GP Rabattkoder</h3>
+            <span>
+              <a href="https://rabattkod.gp.se" class="link-icon"
+                ><i class="fas fa-link" style="font-size: .9em;"></i> Website</a
+              >
+            </span>
+            <p>
+              A responsive discount website for Göteborgs-Posten. Designed
+              mobile first with SEO in mind.
+            </p>
+            <img
+              src="https://res.cloudinary.com/oscarni/image/upload/w_1200,f_auto/v1543873823/gp_rabattkoder.png"
+              class="image1"
+              alt="GP Rabattkoder website desktop"
+            />
+            <div class="video-wrapper">
+              <img
+                src="https://res.cloudinary.com/oscarni/image/upload/f_auto/v1543873815/gp_rabattkoder_brand_mobile.png"
+                class="video1"
+                alt="GP Rabattkoder store page on a mobile screen"
+              />
+              <img
+                src="https://res.cloudinary.com/oscarni/image/upload/f_auto/v1543873816/gp_rabattkoder_mobile.png"
+                class="video2"
+                alt="GP Rabattkoder front page on a mobile screen"
+              />
+            </div>
+            <p></p>
+          </section>
+        </div>
+
+        <hr />
+        <p>
+          I kept my <a href="/memory-lane">previous website</a> of some of my
+          earlier work – websites and some interaction design projects.
+        </p>
+        <p class="bye">👋</p>
+      </div>
     </div>
-
-  </div>
-</body>
-
+  </body>
 </html>
