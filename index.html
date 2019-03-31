@@ -248,16 +248,33 @@
         margin-top: 4rem;
         margin-bottom: 4rem;
       }
+
+      .vertical-hr {
+        border: 0;
+        height: 10rem;
+        width: 1px;
+        background: #333;
+        background-image: linear-gradient(to top, #ccc, #333, #ccc);
+        margin-right: 1rem;
+        margin-left: 1rem;
+        display: inline-block;
+      }
+
       .bye {
         text-align: center;
         font-size: 3rem;
         padding-top: 2rem;
       }
 
+      .inline {
+        display: inline-block;
+        margin: 1em .5em;
+        vertical-align: top;
+      }
+
       .inline-image {
         display: inline-block;
-        width: 400px;
-        margin: 1em;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
       }
 
       .full-width-horizontal-scroll {
@@ -267,9 +284,10 @@
         margin-left: -1rem;
         margin-right: -1rem;
         margin-bottom: -5rem;
+        padding-top: 1rem;
       }
 
-      .full-width-horizontal-scroll *:first-child {
+      .full-width-horizontal-scroll > *:first-child {
         margin-left: 100vw;
         animation: slide-small 0.8s forwards cubic-bezier(0.24, 1.28, 0.39, 0.99);
       }
@@ -297,7 +315,7 @@
       }
 
       details[open] summary .arrow {
-        transform: rotate(-180deg);
+        transform: rotate(-90deg);
       }
 
       details summary:focus {
@@ -315,7 +333,7 @@
           margin-right: var(--auto-margin);
           margin-left: var(--auto-margin);
         }
-        .full-width-horizontal-scroll *:first-child {
+        .full-width-horizontal-scroll > *:first-child {
           animation: slide-big 0.8s forwards cubic-bezier(0.24, 1.28, 0.39, 0.99);
         }
       }
@@ -482,19 +500,87 @@
               tools, code and design together with my team.
             </p>
             <br />
-            <!-- <details>
+            <details>
               <summary>
-                <span>The good parts</span>
-                <i class="fas fa-chevron-down arrow"></i>
+                <span>More of the good parts</span>
+                <i class="fas fa-chevron-right arrow"></i>
               </summary>
-              <div class="full-width-horizontal-scroll">
+              <div class="full-width-horizontal-scroll">  
                 <img
-                  src="https://res.cloudinary.com/oscarni/image/upload/v1553467231/rabblewp7luanch.png"
-                  class="inline-image"
+                  src="https://res.cloudinary.com/oscarni/image/upload/h_400/v1554034907/android-phone-search.png"
+                  srcset="https://res.cloudinary.com/oscarni/image/upload/h_800/v1554034907/android-phone-search.png 2x"
+                  class="inline inline-image"
+                  style="box-shadow: none;"
+                  alt="Rabble android search"
+                />
+                <img
+                  src="https://res.cloudinary.com/oscarni/image/upload/h_400/v1554031901/android-search.jpg"
+                  srcset="https://res.cloudinary.com/oscarni/image/upload/h_800/v1554031901/android-search.jpg 2x"
+                  class="inline inline-image"
+                  alt="Rabble android search"
+                />
+                <img
+                  src="https://res.cloudinary.com/oscarni/image/upload/h_400/v1554031925/android-location.png"
+                  srcset="https://res.cloudinary.com/oscarni/image/upload/h_800/v1554031925/android-location.png 2x"
+                  class="inline inline-image"
+                  alt="Rabble android change location"
+                />
+                <hr class="vertical-hr inline" style="margin-top: 6rem">
+                <img
+                  src="https://res.cloudinary.com/oscarni/image/upload/h_400/v1554035426/beaconConfirmView.png"
+                  srcset="https://res.cloudinary.com/oscarni/image/upload/h_800/v1554035426/beaconConfirmView.png 2x"
+                  class="inline inline-image"
+                  alt="Rabble iPhone confirm location notifications"
+                />
+                <img
+                  src="https://res.cloudinary.com/oscarni/image/upload/h_400/v1554035426/nearby_notification.jpg"
+                  srcset="https://res.cloudinary.com/oscarni/image/upload/h_800/v1554035426/nearby_notification.jpg 2x"
+                  class="inline inline-image"
+                  alt="Rabble android nearby notfication"
+                />
+                <hr class="vertical-hr inline" style="margin-top: 6rem">
+                <div class="inline">
+                  <img
+                    src="https://res.cloudinary.com/oscarni/image/upload/h_220/v1554028911/IMG_8722.jpg"
+                    srcset="https://res.cloudinary.com/oscarni/image/upload/h_440/v1554028911/IMG_8722.jpg 2x"
+                    class="inline-image"
+                    style="margin-bottom: .5em"
+                    alt="Rabble business cards"
+                  />
+                  <br>
+                  <img
+                    src="https://res.cloudinary.com/oscarni/image/upload/h_155/v1554032782/stickers.jpg"
+                    srcset="https://res.cloudinary.com/oscarni/image/upload/h_310/v1554032782/stickers.jpg 2x"
+                    class="inline-image"
+                    style="margin-top: .5em"
+                    alt="Rabble stickers"
+                  />
+                </div>
+                <hr class="vertical-hr inline" style="margin-top: 6rem">
+                <img
+                  src="https://res.cloudinary.com/oscarni/image/upload/h_400/v1553467231/rabblewp7luanch.png"
+                  srcset="https://res.cloudinary.com/oscarni/image/upload/h_800/v1553467231/rabblewp7luanch.png 2x"
+                  class="inline inline-image"
                   alt="Rabble windows phone ad"
                 />
+                <img
+                  src="https://res.cloudinary.com/oscarni/image/upload/h_400/v1554031909/menu.png"
+                  srcset="https://res.cloudinary.com/oscarni/image/upload/h_800/v1554031909/menu.png 2x"
+                  class="inline inline-image"
+                  alt="Rabble windows phone menu redesignb"
+                />
+                <img
+                  src="https://res.cloudinary.com/oscarni/image/upload/h_400/v1554031930/wp_ss_20140424_0002.jpg"
+                  srcset="https://res.cloudinary.com/oscarni/image/upload/h_800/v1554031930/wp_ss_20140424_0002.jpg 2x"
+                  class="inline inline-image"
+                  alt="Rabble windows phone nearby offers"
+                />
+                <hr class="vertical-hr inline" style="margin-top: 6rem">
+                <div class="inline" style="margin-right:5rem;">
+                  <p style="margin-top:7.5rem;">Here is a <a href="https://codepen.io/oscarn/pen/GeeaJP" target="_blank"><i class="fab fa-codepen"></i> CodePen</a> <br> of how I did this expand <br> and swipe-section</p>
+                </div>
               </div>
-            </details> -->
+            </details>
           </section>
 
           <section class="project">
