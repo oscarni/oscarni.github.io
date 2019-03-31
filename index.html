@@ -351,6 +351,18 @@
           margin-left: 1rem;
         }
       }
+     
+      /* fix for IE and Edge */
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        .full-width-horizontal-scroll {
+          margin-bottom: 0;
+        }
+      }
+      @supports (-ms-ime-align:auto) {
+        .full-width-horizontal-scroll {
+          margin-bottom: 0;
+        }
+      }
     </style>
   </head>
 
