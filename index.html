@@ -314,8 +314,12 @@
         cursor: pointer;
       }
 
-      details summary:hover span {
+      details summary span {
         text-decoration: underline;
+      }
+
+      details summary:hover span {
+        text-decoration: none;
       }
 
       summary::-webkit-details-marker {
@@ -333,6 +337,7 @@
       details summary .arrow {
         transition: transform 0.3s;
         margin-left: 0.5rem;
+        transform: rotate(90deg);
       }
 
       @media only screen and (min-width: 612px) {
@@ -502,7 +507,7 @@
             <br/>
             <details>
               <summary>
-                <span>Video of the prototype and screenshots</span>
+                <span>Prototype video and screenshots</span>
                 <i class="fas fa-chevron-right arrow"></i>
               </summary>
               <div class="full-width-horizontal-scroll">
