@@ -36,6 +36,13 @@
     />
     <meta property="og:url" content="//oscarn.se" />
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script>
+      var el = document.querySelector('video');
+      var observer = lozad(el);
+      observer.observe();
+    </script>
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -464,7 +471,7 @@
                   autoplay
                   muted
                   playsinline
-                  class="inline inline-image"
+                  class="lozad inline inline-image"
                   style="width: 88%; max-width: 380px;"
                   poster="https://res.cloudinary.com/oscarni/video/upload/v1610534843/noordinaryscent-wizard.png"
                 >
@@ -516,7 +523,7 @@
                   autoplay
                   muted
                   playsinline
-                  class="inline inline-image"
+                  class="lozad inline inline-image"
                   poster="https://res.cloudinary.com/oscarni/video/upload/v1610545880/unicef-prototyp.png"
                 >
                   <source
@@ -574,7 +581,7 @@
                 autoplay
                 muted
                 playsinline
-                class="video-full inline-image"
+                class="lozad video-full inline-image"
                 style="margin-bottom: 0"
                 poster="https://res.cloudinary.com/oscarni/image/upload/v1610534807/matkasseguiden.png"
               >
@@ -745,7 +752,7 @@
                 autoplay
                 muted
                 playsinline
-                class="video1"
+                class="lozad video1"
                 poster="https://res.cloudinary.com/oscarni/video/upload/so_10p/v1543868726/rabble_search.jpg"
               >
                 <source
@@ -772,7 +779,7 @@
                 autoplay
                 muted
                 playsinline
-                class="video2"
+                class="lozad video2"
                 poster="https://res.cloudinary.com/oscarni/video/upload/so_30p/v1543868726/rabble_map.jpg"
               >
                 <source
